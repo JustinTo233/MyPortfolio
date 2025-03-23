@@ -1,4 +1,4 @@
-import { useState } from "react";
+import { useState, useEffect } from "react";
 import { Hero } from "./components/sections/Hero";
 import Navbar from "./components/sections/Navbar";
 import { About } from "./components/sections/About";
@@ -9,6 +9,10 @@ import { Footer } from "./components/sections/Footer";
 
 function App() {
   const [active, setActive] = useState("Home");
+
+  useEffect(() => {
+    document.title = "Justin To | Portfolio";
+  }, []);
 
   return (
     <div className="bg-custom-gradient">
