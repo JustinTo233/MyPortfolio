@@ -1,24 +1,26 @@
-import React from 'react';
-import logo from './logo.svg';
-import './App.css';
+import { useState } from "react";
+import { Hero } from "./components/sections/Hero";
+import Navbar from "./components/sections/Navbar";
+import { About } from "./components/sections/About";
+import { Projects } from "./components/sections/Projects";
+import { Contact } from "./components/sections/Contact";
+import { ParticleAnimation } from "./components/ui/ParticleAnimation";
+import { Footer } from "./components/sections/Footer";
 
 function App() {
+  const [active, setActive] = useState("Home");
+
   return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.tsx</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
+    <div className="bg-custom-gradient">
+      {/* <ParticleAnimation /> */}
+      <div className="relative z-10">
+        <Hero setActive={setActive} />
+        <Navbar active={active} setActive={setActive} />
+        <About />
+        <Projects />
+        <Contact />
+        <Footer />
+      </div>
     </div>
   );
 }
