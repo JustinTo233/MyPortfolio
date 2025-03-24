@@ -16,8 +16,8 @@ function App() {
 
   return (
     <div className="bg-custom-gradient">
-      {/* <ParticleAnimation /> */}
       <div className="relative z-10">
+        <ParticleAnimation />
         <Hero setActive={setActive} />
         <Navbar active={active} setActive={setActive} />
         <About />

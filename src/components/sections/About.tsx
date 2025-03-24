@@ -1,19 +1,20 @@
 import "../../index.css";
 import { motion } from "framer-motion";
 import { ParticleAnimation } from "../ui/ParticleAnimation";
+import { images } from "../../assets/images";
 
 const skills = [
-  { name: "typescript", icon: "/img/typescript.svg" },
-  { name: "react", icon: "/img/react.svg" },
-  { name: "react native", icon: "/img/react.svg" },
-  { name: "node.js", icon: "/img/nodejs.svg" },
-  { name: "tailwindcss", icon: "/img/tailwindcss.svg" },
-  { name: "javascript", icon: "/img/javascript.svg" },
-  { name: "java", icon: "/img/java.svg" },
-  { name: "html", icon: "/img/html.svg" },
-  { name: "css", icon: "/img/css.svg" },
-  { name: "mongodb", icon: "/img/mongodb.svg" },
-  { name: "expo", icon: "/img/expo.svg" },
+  { name: "typescript", icon: images.typescriptIcon },
+  { name: "react", icon: images.reactIcon },
+  { name: "react native", icon: images.reactnativeIcon },
+  { name: "node.js", icon: images.nodejsIcon },
+  { name: "tailwindcss", icon: images.tailwindcssIcon },
+  { name: "javascript", icon: images.javascriptIcon },
+  { name: "java", icon: images.javaIcon },
+  { name: "html", icon: images.htmlIcon },
+  { name: "css", icon: images.cssIcon },
+  { name: "mongodb", icon: images.mongodbIcon },
+  { name: "expo", icon: images.expoIcon },
 ];
 
 export const About = () => {

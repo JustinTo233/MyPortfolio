@@ -7,6 +7,7 @@ export const ParticleAnimation = () => {
     if (!particlesContainer) return;
 
     const particleCount = 80;
+    
     for (let i = 0; i < particleCount; i++) {
       createParticle();
     }
