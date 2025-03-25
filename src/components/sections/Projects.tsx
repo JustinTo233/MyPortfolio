@@ -19,8 +19,10 @@ export const Projects = () => {
             Machine Learning For Network-Denied Environment
           </h3>
           <p className="text-base">
-            Full stack social media application built with react, node.js,
-            express.js, mongodb, socket.io, and aws s3
+            A hybrid machine learning solution designed for environments with
+            limited connectivity. It features a cloud-based server with a web UI
+            and an offline mobile app powered by an image classification AI
+            model.
           </p>
           <a
             href={mindedemoVid}
@@ -43,15 +45,26 @@ export const Projects = () => {
       {/* Project #2 */}
       <div className="project-container project-right">
         <div className="flex flex-col">
-          <h3 className="text-4xl mb-2">Project #2</h3>
+          <h3 className="text-4xl mb-2">Pokédex</h3>
           <p>
-            Full stack social media application built with react, node.js,
-            express.js, mongodb, socket.io, and aws s3
+            An interactive Pokédex built with React.js and CSS, featuring search
+            functionality, type filtering, and detailed Pokémon stats.
+            Integrated with PokéAPI for up-to-date information.
           </p>
-          <a href="#" className="project-btn">
+          <a
+            href="https://justinto233.github.io/PokeDex/"
+            className="project-btn"
+            target="_blank"
+            rel="noopener noreferrer"
+          >
             App
           </a>
-          <a href="#" className="project-btn">
+          <a
+            href="https://github.com/JustinTo233/PokeDexe"
+            className="project-btn"
+            target="_blank"
+            rel="noopener noreferrer"
+          >
             Learn More
           </a>
         </div>
@@ -70,22 +83,32 @@ export const Projects = () => {
         <div className="project-image-container">
           <div className="project-image-wrapper">
             <img
-              src="img/pokedexhome.png"
+              src={images.timetodie}
               alt="Project Screenshot"
               className="project-image"
             ></img>
           </div>
         </div>
         <div className="flex flex-col">
-          <h3 className="text-4xl mb-2">Project #3</h3>
+          <h3 className="text-4xl mb-2">Time To Die</h3>
           <p>
-            Full stack social media application built with react, node.js,
-            express.js, mongodb, socket.io, and aws s3
+            A collaboration of 7 developers to design and develop a 2D roguelike
+            game using Unity and C# during the Game Jam 2022.
           </p>
-          <a href="#" className="project-btn">
+          <a
+            href="https://oompakhanta.itch.io/time-to-die"
+            className="project-btn"
+            target="_blank"
+            rel="noopener noreferrer"
+          >
             App
           </a>
-          <a href="#" className="project-btn">
+          <a
+            href="http://github.com/JustinTo233/Game_Jam_2022"
+            className="project-btn"
+            target="_blank"
+            rel="noopener noreferrer"
+          >
             Learn More
           </a>
         </div>
@@ -93,22 +116,32 @@ export const Projects = () => {
       {/* Project #4 */}
       <div className="project-container project-right">
         <div className="flex flex-col">
-          <h3 className="text-4xl mb-2">Project #4</h3>
+          <h3 className="text-4xl mb-2">Tetris</h3>
           <p>
-            Full stack social media application built with react, node.js,
-            express.js, mongodb, socket.io, and aws s3
+            A classic Tetirs remake built with Unity and C#. This project
+            showcases skills in game logic, animations, and state management.
           </p>
-          <a href="#" className="project-btn">
+          <a
+            href="https://github.com/JustinTo233/TetrisACM/tree/main/Game%20Download"
+            className="project-btn"
+            target="_blank"
+            rel="noopener noreferrer"
+          >
             App
           </a>
-          <a href="#" className="project-btn">
+          <a
+            href="https://github.com/JustinTo233/TetrisACM"
+            className="project-btn"
+            target="_blank"
+            rel="noopener noreferrer"
+          >
             Learn More
           </a>
         </div>
         <div className="project-image-container">
           <div className="project-image-wrapper">
             <img
-              src={images.timetodie}
+              src={images.tetris}
               alt="Project Screenshot"
               className="project-image"
             ></img>
@@ -120,22 +153,24 @@ export const Projects = () => {
         <div className="project-image-container">
           <div className="project-image-wrapper">
             <img
-              src={images.tetris}
+              src={images.todo}
               alt="Project Screenshot"
               className="project-image"
             ></img>
           </div>
         </div>
         <div className="flex flex-col">
-          <h3 className="text-4xl mb-2">Project #5</h3>
+          <h3 className="text-4xl mb-2">To-Do List</h3>
           <p>
-            Full stack social media application built with react, node.js,
-            express.js, mongodb, socket.io, and aws s3
+            A simple and intuitive task management app built with HTML, CSS, and
+            JavaScript. Features include adding, editing, and deleting tasks.
           </p>
-          <a href="#" className="project-btn">
-            App
-          </a>
-          <a href="#" className="project-btn">
+          <a
+            href="https://github.com/JustinTo233/To-Do-List"
+            className="project-btn"
+            target="_blank"
+            rel="noopener noreferrer"
+          >
             Learn More
           </a>
         </div>

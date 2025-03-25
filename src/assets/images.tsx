@@ -13,6 +13,7 @@ import pokedex from "./img/pokedex.png";
 import seniordesign from "./img/seniordesign.png";
 import tetris from "./img/tetris.png";
 import timetodie from "./img/timetodie.png";
+import todo from "./img/todo.png";
 
 export const images = {
   typescriptIcon,
@@ -30,4 +31,5 @@ export const images = {
   seniordesign,
   tetris,
   timetodie,
+  todo,
 };

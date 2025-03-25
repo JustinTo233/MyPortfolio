@@ -61,7 +61,7 @@ h3 {
 .particle {
   position: absolute;
   border-radius: 50%;
-  background-color: #fff;
+  background-color: #ffbe5a;
   pointer-events: none;
   transition: all 1.5s ease-out;
 }

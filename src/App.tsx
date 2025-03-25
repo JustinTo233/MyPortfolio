@@ -10,15 +10,11 @@ import { Footer } from "./components/sections/Footer";
 function App() {
   const [active, setActive] = useState("Home");
 
-  useEffect(() => {
-    document.title = "Justin To | Portfolio";
-  }, []);
-
   return (
     <div className="bg-custom-gradient">
       <div className="relative z-10">
         <ParticleAnimation />
-        <Hero setActive={setActive} />
+        <Hero />
         <Navbar active={active} setActive={setActive} />
         <About />
         <Projects />

@@ -33,14 +33,24 @@ export const About = () => {
           // animate={{ x: 0, opacity: 1 }}
           transition={{ duration: 0.8 }}
         >
-          <img
+          {/* <img
             src=""
             alt="Profile"
             className="w-32 h-32 sm:w-48 sm:h-48 object-cover rounded-full mb-6"
-          />
-          <p className="w-full sm:w-[500px] text-base sm:text-lg px-4">
-            I'm a software engineer with a passion for JavaScript, React, and
-            all things web development.
+          /> */}
+          <p className="w-full sm:w-[570px] text-base sm:text-lg px-4">
+            I'm a CSULA graduate with a strong foundation in software
+            engineering, specializing in front-end and web development. My
+            passion for coding is matched by my likes for crafting intuitive and
+            user-friendly web applications.
+            <br />
+            <br />
+            In addition to my technical expertise, I enjoy exploring new ideas,
+            particularly in the areas of UI/UX design. My hobbies reflect my
+            diverse interests: I'm a gamer, keyboard enthusiast, and love to
+            travel, hike, and explore new foods. I also stay active with tennis
+            and badminton. These activities help me maintain a balance between
+            creativity and physical well-being.
           </p>
         </motion.div>
 

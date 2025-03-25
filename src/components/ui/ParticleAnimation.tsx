@@ -7,7 +7,7 @@ export const ParticleAnimation = () => {
     if (!particlesContainer) return;
 
     const particleCount = 80;
-    
+
     for (let i = 0; i < particleCount; i++) {
       createParticle();
     }
@@ -26,8 +26,8 @@ export const ParticleAnimation = () => {
     }
 
     function resetParticle(particle: HTMLElement) {
-      const posX = Math.random() * 100;
-      const posY = Math.random() * 100;
+      const posX = Math.random() * 90;
+      const posY = Math.random() * 90;
 
       particle.style.left = `${posX}%`;
       particle.style.top = `${posY}%`;
@@ -41,7 +41,7 @@ export const ParticleAnimation = () => {
 
       // Start animation immediately without delay
       particle.style.transition = `all ${duration}s linear`;
-      particle.style.opacity = (Math.random() * 0.3 + 0.1).toString();  // Set opacity to a random value
+      particle.style.opacity = (Math.random() * 0.3 + 0.1).toString(); // Set opacity to a random value
 
       const moveX = Math.random() * 20 - 10;
       const moveY = -Math.random() * 30;
