@@ -60,7 +60,7 @@ export const Projects = () => {
             App
           </a>
           <a
-            href="https://github.com/JustinTo233/PokeDexe"
+            href="https://github.com/JustinTo233/PokeDex/"
             className="project-btn"
             target="_blank"
             rel="noopener noreferrer"
