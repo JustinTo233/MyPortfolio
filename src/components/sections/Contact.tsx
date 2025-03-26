@@ -4,9 +4,9 @@ export const Contact = () => {
   return (
     <section
       id="contact"
-      className="pt-20 pb-10 flex flex-col justify-center items-center text-white mb-10"
+      className="pb-10 flex flex-col justify-center items-center text-white mb-10"
     >
-      <h1 className="section-heading contact-heading custom-contact-heading mb-10">
+      <h1 className="contact-heading section-heading custom-contact-heading mb-10">
         Contact
       </h1>
       <div className="flex flex-col justify-center text-xl gap-6 rounded-xl p-[2px]">

@@ -10,22 +10,43 @@ const Navbar = ({ active, setActive }: NavbarProps) => {
   const menuItems = ["Home", "About", "Projects", "Contact"];
   const [isMobileMenuOpen, setIsMobileMenuOpen] = useState(false);
 
+  useEffect(() => {
+    const savedScrollPosition = sessionStorage.getItem("scrollPosition");
+    if (savedScrollPosition) {
+      window.scrollTo(0, parseInt(savedScrollPosition, 10));
+    }
+  }, []);
+
+  useEffect(() => {
+    document.documentElement.style.scrollBehavior = "auto"; // Enable smooth scroll
+
+    // Prevent smooth scroll on refresh
+    setTimeout(() => {
+      document.documentElement.style.scrollBehavior = "smooth"; // Disable smooth scroll for page load
+    }, 100);
+  }, []);
+
   // Scroll handler to update the active state based on the section in view
   useEffect(() => {
+    let timeoutId: NodeJS.Timeout;
+
     const handleScroll = () => {
-      const sections = document.querySelectorAll("section");
-      let currentSection = "Home";
+      clearTimeout(timeoutId);
+      timeoutId = setTimeout(() => {
+        const sections = document.querySelectorAll("section");
+        let currentSection = "Home";
 
-      sections.forEach((section) => {
-        const sectionTop = section.offsetTop - 400;
-        if (window.scrollY >= sectionTop) {
-          currentSection =
-            section.getAttribute("id")!.charAt(0).toUpperCase() +
-            section.getAttribute("id")!.slice(1);
-        }
-      });
+        sections.forEach((section) => {
+          const sectionTop = section.offsetTop - 400;
+          if (window.scrollY >= sectionTop) {
+            currentSection =
+              section.getAttribute("id")!.charAt(0).toUpperCase() +
+              section.getAttribute("id")!.slice(1);
+          }
+        });
 
-      setActive(currentSection);
+        setActive(currentSection);
+      }, 100); // Debounce delay (adjust if needed)
     };
 
     window.addEventListener("scroll", handleScroll);

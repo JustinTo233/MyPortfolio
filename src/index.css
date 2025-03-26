@@ -9,6 +9,7 @@ body {
   font-family: "Montserrat", sans-serif;
   color: white;
   min-height: 100vh;
+  overscroll-behavior-x: none;
 }
 
 * {
@@ -45,7 +46,8 @@ h3 {
   position: relative;
   font-size: 3.5rem;
   font-weight: 700;
-  margin-bottom: 5rem;
+  margin-bottom: 9rem;
+  margin-top: 5rem;
 }
 
 .particles-container {
@@ -274,8 +276,8 @@ h3 {
   z-index: -1;
 }
 
-.custom-contact-heading {
-  margin-bottom: 2rem;
+.contact-heading {
+  margin-bottom: 2rem !important;
 }
 
 /* Media Styling */

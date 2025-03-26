@@ -9,7 +9,6 @@ import { Footer } from "./components/sections/Footer";
 
 function App() {
   const [active, setActive] = useState("Home");
-
   return (
     <div className="bg-custom-gradient">
       <div className="relative z-10">

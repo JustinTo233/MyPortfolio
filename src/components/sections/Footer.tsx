@@ -1,12 +1,11 @@
 import "../../index";
-import { motion } from "framer-motion";
 import GitHubIcon from "@mui/icons-material/GitHub";
 import LinkedInIcon from "@mui/icons-material/LinkedIn";
 
 export const Footer = () => {
   return (
-    <footer className="bg-[#111827] py-8">
-      <div className="container mx-auto flex justify-center items-center space-x-6">
+    <footer className="bg-[#111827] h-[160px] flex flex-col items-center justify-center">
+      <div className="flex space-x-6">
         <a
           href="https://github.com/JustinTo233"
           target="_blank"
