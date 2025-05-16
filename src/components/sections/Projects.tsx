@@ -153,20 +153,29 @@ export const Projects = () => {
         <div className="project-image-container">
           <div className="project-image-wrapper">
             <img
-              src={images.todo}
+              src={images.whatsinmyfridge}
               alt="Project Screenshot"
               className="project-image"
             ></img>
           </div>
         </div>
         <div className="flex flex-col">
-          <h3 className="text-4xl mb-2">To-Do List</h3>
+          <h3 className="text-4xl mb-2">What's In My Fridge</h3>
           <p>
-            A simple and intuitive task management app built with HTML, CSS, and
-            JavaScript. Features include adding, editing, and deleting tasks.
+            A simple recipe-finding site that suggests meals based on the
+            ingredients you already have. Built with Angular and the Spoonacular
+            API, it helps reduce food waste and makes meal planning easier.
           </p>
           <a
-            href="https://github.com/JustinTo233/To-Do-List"
+            href="https://justinto233.github.io/WhatsInMyFridge/"
+            className="project-btn"
+            target="_blank"
+            rel="noopener noreferrer"
+          >
+            App
+          </a>
+          <a
+            href="https://github.com/JustinTo233/WhatsInMyFridge"
             className="project-btn"
             target="_blank"
             rel="noopener noreferrer"

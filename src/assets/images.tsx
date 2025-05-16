@@ -9,11 +9,13 @@ import htmlIcon from "./img/html.svg";
 import cssIcon from "./img/css.svg";
 import mongodbIcon from "./img/mongodb.svg";
 import expoIcon from "./img/expo.svg";
+import angularIcon from "./img/angular.svg";
+import sassIcon from "./img/sass.svg";
 import pokedex from "./img/pokedex.png";
 import seniordesign from "./img/seniordesign.png";
 import tetris from "./img/tetris.png";
 import timetodie from "./img/timetodie.png";
-import todo from "./img/todo.png";
+import whatsinmyfridge from "./img/fridge.png";
 
 export const images = {
   typescriptIcon,
@@ -27,9 +29,11 @@ export const images = {
   cssIcon,
   mongodbIcon,
   expoIcon,
+  angularIcon,
+  sassIcon,
   pokedex,
   seniordesign,
   tetris,
   timetodie,
-  todo,
+  whatsinmyfridge,
 };

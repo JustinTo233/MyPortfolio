@@ -5,11 +5,12 @@ import { images } from "../../assets/images";
 
 const skills = [
   { name: "typescript", icon: images.typescriptIcon },
-  { name: "react", icon: images.reactIcon },
-  { name: "react native", icon: images.reactnativeIcon },
+  { name: "react/react native", icon: images.reactIcon },
   { name: "node.js", icon: images.nodejsIcon },
   { name: "tailwindcss", icon: images.tailwindcssIcon },
   { name: "javascript", icon: images.javascriptIcon },
+  { name: "angular", icon: images.angularIcon },
+  { name: "sass (scss)", icon: images.sassIcon },
   { name: "java", icon: images.javaIcon },
   { name: "html", icon: images.htmlIcon },
   { name: "css", icon: images.cssIcon },
